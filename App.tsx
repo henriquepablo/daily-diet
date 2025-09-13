@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
 import { Nunito_400Regular, Nunito_700Bold, useFonts } from '@expo-google-fonts/nunito';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@styles/theme';
+import { Home } from '@screens/index';
 
 export default function App() {
 
@@ -13,19 +12,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-        <View style={styles.container}>
-            <Text>Open up App.tsx to start working on your app!</Text>
-            <StatusBar style="auto" />
-        </View>
+      <Home />
     </ThemeProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
