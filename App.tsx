@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { Nunito_400Regular, Nunito_700Bold, useFonts } from '@expo-google-fonts/nunito';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './src/styles/theme';
+import { theme } from '@styles/theme';
 
 export default function App() {
 
