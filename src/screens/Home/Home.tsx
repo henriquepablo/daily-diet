@@ -1,9 +1,14 @@
-import { View } from "react-native";
+import { logo, profile } from "@assets/index";
+import { Container, Header, Logo, ProfileImage } from "./styles";
 
 const Home: React.FC = () => {
     return (
-        <View>
-        </View>
+        <Container>
+            <Header>
+                <Logo source={logo}/>
+                <ProfileImage source={profile}/>
+            </Header>
+        </Container>
     )
 }
 
